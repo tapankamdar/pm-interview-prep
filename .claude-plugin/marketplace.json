@@ -1,0 +1,14 @@
+{
+  "name": "pm-interview-prep",
+  "owner": {
+    "name": "Tapan Kamdar"
+  },
+  "plugins": [
+    {
+      "name": "pm-interview-prep",
+      "source": "./",
+      "description": "17 skills for senior PM interview preparation — company-specific prep docs, transcript scoring, practice drills, and positioning tools.",
+      "version": "0.1.0"
+    }
+  ]
+}
