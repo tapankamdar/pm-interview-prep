@@ -27,16 +27,43 @@ This plugin is built for that gap: the space between knowing the frameworks and 
 
 ## Installation
 
-### Claude Cowork (recommended)
+### Claude Cowork (recommended for non-developers)
 1. Open **Customize** (bottom-left corner)
 2. Go to **Browse plugins → Personal → +**
 3. Select **Add marketplace from GitHub**
 4. Enter: `tapankamdar/pm-interview-prep`
 
-### Claude Code (CLI)
+All 17 skills and commands install automatically.
+
+### Claude Code
+
+Run these slash commands inside Claude Code:
+
+```
+# Step 1: Add the marketplace
+/plugin marketplace add tapankamdar/pm-interview-prep
+
+# Step 2: Install the plugin
+/plugin install pm-interview-prep@tapankamdar/pm-interview-prep
+```
+
+### Other AI assistants (skills only)
+
+The `skills/*/SKILL.md` files follow the universal skill format and work with any tool that reads it. Slash commands (`/pm-prep`, `/pm-analyze`, `/pm-mock`, etc.) are Claude-specific, but the passive intelligence skills (`pm-question-taxonomy`, `pm-framework-guide`, `pm-company-archetype`, `pm-depth-cue`) work in any compatible tool.
+
+| Tool | How to use | What works |
+|---|---|---|
+| Gemini CLI | Copy skill folders to `~/.gemini/skills/` | Skills only |
+| OpenCode | Copy skill folders to `.opencode/skills/` | Skills only |
+| Cursor | Copy skill folders to `.cursor/skills/` | Skills only |
+| Kiro | Copy skill folders to `.kiro/skills/` | Skills only |
+
 ```bash
-claude plugin marketplace add tapankamdar/pm-interview-prep
-claude plugin install pm-interview-prep@pm-interview-prep
+# Example: copy all skills for OpenCode (project-level)
+cp -r skills/* .opencode/skills/
+
+# Example: copy all skills for Gemini CLI (global)
+cp -r skills/* ~/.gemini/skills/
 ```
 
 ---
