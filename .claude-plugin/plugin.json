@@ -1,0 +1,9 @@
+{
+  "name": "pm-interview-prep",
+  "version": "0.1.0",
+  "description": "PM interview preparation — company-specific prep docs, transcript scoring, practice drills, and positioning tools for product managers interviewing at senior levels.",
+  "author": {
+    "name": "Tapan Kamdar"
+  },
+  "keywords": ["product management", "interview prep", "PM", "job search", "career"]
+}
